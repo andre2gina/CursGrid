@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Model site</title>
+<style>
+.container {
+width: 95%;
+max-width: 900px;
+margin: 0 auto;
+}
+.retea {
+display: grid;
+grid-template-rows: 250px 1fr 120px;
+grid-template-columns: 250px 2fr 1fr;
+grid-template-areas:
+"hd hd hd"
+"nv mai asd"
+"pic pic pic";
+grid-gap: .75em;
+}
+header {
+grid-area: hd;
+background-color: #9b59b6;
+padding: 15px;
+}
+nav {
+grid-area: nv;
+background-color: #3498db;
+padding: 15px;
+}
+main {
+grid-area: mai;
+background-color: #2ecc71;
+padding: 15px;
+}
+aside {
+grid-area: asd;
+background-color: #f1c40f;
+padding: 15px;
+}
+footer {
+grid-area: pic;
+background-color: #1abc9c;
+padding: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="retea">
+<header><h2>Continut header</h2></header>
+<nav><h3>Continut nav</h3></nav>
+<main><h2> Continut main </h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.</p>
+</main>
+<aside><h3>Continut aside</h3></aside>
+<footer><h2>Continut footer</h2></footer>
+</div>
+</div>
+</body>
+</html>
