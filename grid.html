@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Tic tac toe</title>
+<style>
+.container {
+width: 900px;
+margin: 0 auto;
+}
+.bloc-joc {
+width: 300px;
+height: 300px;
+background-color: powderblue;
+display: grid;
+grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+grid-gap: 15px;
+}
+.item {
+display: flex;
+ align-items: center;
+ justify-content: center;
+background-color: blue;
+color: yellow;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Tic, tac, toe</h2>
+<br>
+<div class="bloc-joc">
+<div class="item">X</div>
+<div class="item">O</div>
+<div class="item">X</div>
+<div class="item"></div>
+<div class="item">X</div>
+<div class="item">O</div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item">X</div>
+</div>
+</div>
+</body>
+</html>
